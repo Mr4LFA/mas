@@ -314,7 +314,6 @@ def main(arg):
 			global cekpoint,oks
 			user = arg
 			try:
-			os.mkdir('Hacked')
 			except OSError:
 			pass
 			try:
